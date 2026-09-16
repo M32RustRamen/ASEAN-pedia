@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASEAN pedia</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap CSS -->
     <style>
         .title{
             font-family: 'Times New Roman', Times, serif;
@@ -49,7 +49,7 @@
             background-color: #000000;
             color: #ffffff;
             a {
-                color: #ffffff;
+                color: #ffffff; <!-- Link Color -->
             } 
         }
         .title-button{
@@ -57,15 +57,15 @@
             border: none;
         }
         .title-all{
-            text-decoration: none;
+            text-decoration: none; <!-- Link Underline -->
             color: black;
             
         }
     </style>
 </head>
 <body>
-    <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button>
-    <button class=title-button>
+    <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button> <!-- Theme button -->
+    <button class=title-button> <!-- Title and subtitle -->
       <a href="index.html" class="title-all" style="margin-left: 20px; margin-top: 20px;">
       <div class="row title">
             <p> ASEAN Wikipedia <p>
@@ -76,7 +76,7 @@
      </a>
     </button>
 
-    <div class="row row1-flags" style="text-align: center;">
+    <div class="row row1-flags" style="text-align: center;"> <!-- Row 1 of flags -->
         <div class="col thailand">
             <h1>Thailand</h1>
             <a href="Thailand.html">
@@ -108,7 +108,7 @@
             </a>
         </div>
     </div>
-    <div class="row row2-flags" style="text-align: center;">
+    <div class="row row2-flags" style="text-align: center;"> <!-- Row 2 of flags -->
         <div class="col philippines">
             <h1>Philippines</h1>
             <a href="Philippines.html">
@@ -140,7 +140,7 @@
             </a>
         </div>
     </div>
-    <div class="row row3-flags" style="text-align: center;">
+    <div class="row row3-flags" style="text-align: center;"> <!-- Row 3 of flags -->
         <div class="col east-timor">
             <h1>East Timor</h1>
             <a href="East_Timor.html">
@@ -153,7 +153,7 @@
 
     <script>
         function toggleTheme() {
-            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('dark-theme'); <!-- Function to toggle between light and dark theme -->
         }
     </script>
 </body>
