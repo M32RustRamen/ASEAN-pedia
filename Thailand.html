@@ -37,20 +37,45 @@
             margin-left:absolute;
         }
         .National-Anthem{
+            font-size: 30px;
             margin-left: 500px;
             margin-top: 20px;
+        }
+        .theme-button{
+            position: absolute;
+            top: 10px;
+            right: 50px;
+        }
+        .dark-theme {
+            background-color: #000000;
+            color: #ffffff;
+            a {
+                color: #ffffff;
+            } 
+        }
+        .title-button{
+            background-color: transparent;
+            border: none;
+        }
+        .title-all{
+            text-decoration: none;
+            color: black;
+            
         }
     </style>
 </head>
 <body>
-    <a href="index.html" class="btn" style="margin-left: 20px; margin-top: 20px;">
-    <div class="row title">
-          <p> ASEAN Wikipedia <p>
-     </div>
-     <div class="row sub-title">
-          <p>The free ASEAN encyclopedia</p>
-        </div>
-    </a>
+    <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button>
+    <button class=title-button>
+      <a href="index.html" class="title-all" style="margin-left: 20px; margin-top: 20px;">
+      <div class="row title">
+            <p> ASEAN Wikipedia <p>
+       </div>
+       <div class="row sub-title">
+            <p>The free ASEAN encyclopedia</p>
+         </div>
+     </a>
+    </button>
     <div class="row title-country">
         <p>Thailand</p>
     </div>
@@ -65,11 +90,11 @@
     <div class="col National-Anthem">
         <a href="https://www.youtube.com/watch?v=BrcGzLIEsAU" target="_blank">National Anthem of Thailand</a>
     </div>
-     
+         <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
 
-
-        
-    
-    
 </body>
 </html>

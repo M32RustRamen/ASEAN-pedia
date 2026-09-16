@@ -48,19 +48,34 @@
         .dark-theme {
             background-color: #000000;
             color: #ffffff;
+            a {
+                color: #ffffff;
+            } 
+        }
+        .title-button{
+            background-color: transparent;
+            border: none;
+        }
+        .title-all{
+            text-decoration: none;
+            color: black;
+            
         }
     </style>
 </head>
 <body>
     <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button>
-    <a href="index.html" class="btn" style="margin-left: 20px; margin-top: 20px;">
-    <div class="row title">
-          <p> ASEAN Wikipedia <p>
-     </div>
-     <div class="row sub-title">
-          <p>The free ASEAN encyclopedia</p>
-        </div>
-    </a>
+    <button class=title-button>
+      <a href="index.html" class="title-all" style="margin-left: 20px; margin-top: 20px;">
+      <div class="row title">
+            <p> ASEAN Wikipedia <p>
+       </div>
+       <div class="row sub-title">
+            <p>The free ASEAN encyclopedia</p>
+         </div>
+     </a>
+    </button>
+
     <div class="row row1-flags">
         <div class="col placeholder0">
             <h1>THAILAND</h1>
